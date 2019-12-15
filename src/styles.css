@@ -1,1 +1,175 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,900|Roboto:300,400,500,700,900&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0; padding: 0;
+	font-family: roboto, helvetica !important;
+}
+.body{width: 98.7%;}
+.header{
+	width: 100%;
+	height: 95vh;
+	background: url(assets/img/brand-component.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.nav{width: 100%; height: auto; overflow: auto; padding: 0 0 10px 0; position: relative;}
+.nav ul{padding: 30px 0 10px 0; width: 80%; height: auto; overflow: auto; }
+.nav ul li{list-style: none; display: inline;}
+.nav ul li a{
+	color: #17139C;
+	padding: 10px 12px;
+	text-decoration: none;
+	font-size: 17px;
+}
+.nav .auth{border: 2px solid #ffffff; 
+	box-shadow: 1px 0.4px 7px rgba(0,0,0,.1);
+	-webkit-box-shadow: 1px 0.4px 7px rgba(0,0,0,.1);
+	-moz-box-shadow: 1px 0.4px 7px rgba(0,0,0,.1);
+	-ms-box-shadow: 1px 0.4px 7px rgba(0,0,0,.1);
+	-o-box-shadow: 1px 0.4px 7px rgba(0,0,0,.1);
+
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+
+	z-index: 10;
+	position: relative;
+}
+.nav li:nth-child(6) a{margin-right: 12px; padding: 10px 25px; background: none; color: #ffffff;}
+.nav li:nth-child(6) a:hover{background: #ffffff; color: #17139C; transition: .3s all ease-in-out;}
+.nav li:nth-child(5) a{margin-right: 10px; padding: 10px 25px; background: #ffffff;}
+.logo{width: 150px; height: auto; padding: 25px 0 0 0; float: left;}
+.logo img{width: 100%;}
+.resetlogo{padding-left: 0px;}
+.top-component{position: absolute; top: 0; right: 0; z-index: 2;}
+.top-component img{width: 75%;}
+.right-component{position: absolute; top: 22%; right: 7%; z-index: 2;}
+.right-component img{width: 60%;}
+.left-component{position: absolute; top: 80%; left: 0%; z-index: 2;}
+.left-component img{width: 60%;}
+.bg-illustrate img{width: 100%; position: relative; top: 12%;}
+.btn-home{background: none; border: 2px solid #58C3FD; color: #17139C; padding: 6px 35px !important;}
+.header-title{
+	color: #17139C; font-size: 45px; margin-top: 20vh; 
+	font-family: 'Nunito Sans', sans-serif !important; font-weight: bolder;
+}
+.header-title span{font-weight: 300;}
+.btn-home img{width: 20px;}
+.btn-home:hover{background: none; color: #17139C;}
+.btn-home:hover img{margin-left: 10px; transition: all 0.2s ease-in-out;}
+
+
+.mediabox{
+	width: 100%;
+	height: 300px;
+	background: linear-gradient(to right, #0C0A4E, #58C3FD);
+	padding: 90px 0;
+	font-family: Nunito Sans !important;
+	position: relative;
+}
+.mediabox h1{text-align: left; color: #ffffff; font-weight: 500;  
+	font-size: 24px; line-height: 1.5em;}
+.mediabox p{color: #ffffff; font-weight: 300;}
+.mediabox line{width: 20%; height: 5px; background: #ffffff;}
+.white-play-btn{position: absolute; top: 0; left: 3%; cursor: pointer;}
+.trainingbox{margin: 80px 0; height: auto; overflow: auto; }
+.trainingbox p,h2{color: #17139C; text-align: none !important; line-height: 2em;}
+.training-picbox{width: 100%; height: 350px; margin: 0 0 0 0; background: #F2F2F2;}
+.btn-more{
+	background: linear-gradient(to right, #58C3FD, #0C0A4E);
+	color: #ffffff; border: none; padding: 8px 30px; 
+}
+.btn-more:hover{background: none; color: #17139C; border: 1.5px solid #17139C;}
+
+.investcon{width: 100%; height: auto; overflow: auto; padding: 50px 0 100px 0; background: #F2F2F2; 
+	clip-path: polygon(0 0, 100% 0, 100% 82%, 0 100%);}
+.investcon p,h2{color: #17139C; text-align: none !important; line-height: 2em;}
+.invest-picbox{width: 100%; height: 300px; background: blue;}
+
+.parallaxbg{width: 100%; height: 400px; 
+	background: linear-gradient(to right bottom, rgba(88,195,253,0.7), rgba(12,10,78,.7)), url(assets/img/bg1.jpg);
+	background-size: cover; background-repeat: no-repeat; clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+	margin: -80px 0 0 0; background-attachment: fixed; position: relative; }
+.parallaxbg h1{text-align: center; color: #ffffff; padding-top: 200px;}
+
+
+
+
+
+.footer{width: 100%; height: auto; background: #333333; color: #ffffff; padding: 60px 0 80px 0;}
+.footer ul{}
+.footer h2{color: #ffffff; font-size: 22px; padding-bottom: 20px;}
+.footer ul li{list-style: none;}
+.footer ul li a{color: #ffffff; line-height: 2.5em; font-size: 14px; text-decoration: none;}
+.footer a i{margin-right: 10px;}
+
+
+
+
+
+
+
+
+
+
+
+/*---------------  Modal Style -------------*/
+.modal-dialog {max-width: 800px; margin: 30px auto;}
+.modal-body {position:relative; padding:0px;}
+.close {position:absolute; right:-30px; top:0; z-index:999; font-size:2rem; font-weight: normal; color:#fff; opacity:1;}
+
+
+
+/*---------------  Forms Style -------------*/
+.formbg{
+	background: url(assets/img/bg1.jpg);
+	background-position: 90% 20%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding: 0;
+}
+.formbox{
+	width: auto;
+	height: 100vh; 
+	padding: 0;
+}
+.formbox a{color: #17139c; }
+.formlogo{width: 150px; height: auto; position: absolute; top: 5%; left: 10%;}
+.formlogo img{width: 100%;}
+
+.inner-formbox{position: absolute; top: 10%;}
+
+.title{font-size: 25px; color: #282829; text-align: center; font-weight: bolder;}
+.sub-title{}
+.maintext{font-size: 18px; color: #282829; text-align: center;}
+.mycard{padding: 25px 22px 10px 22px;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+	-ms-box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+	-o-box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+.mycard input{margin-bottom: 25px !important;}
+.btn_ad{background: #17139C; color: #ffffff; border: 1px solid #17139c;}
+
+
+
+
+
+
+
+
+
