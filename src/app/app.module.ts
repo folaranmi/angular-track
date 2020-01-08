@@ -8,6 +8,7 @@ import { TestComponent } from './test/test.component';
 import { MyworkComponent } from './mywork/mywork.component';
 import { ServerComponent } from './server/server.component';
 import { PickupComponent } from './pickup/pickup.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,10 +17,12 @@ import { PickupComponent } from './pickup/pickup.component';
     CoursesComponent,
     MyworkComponent,
     ServerComponent,
-    PickupComponent
+    PickupComponent,
+    
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
