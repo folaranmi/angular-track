@@ -9,6 +9,7 @@ import { MyworkComponent } from './mywork/mywork.component';
 import { ServerComponent } from './server/server.component';
 import { PickupComponent } from './pickup/pickup.component';
 import { FormsModule } from '@angular/forms';
+import { AssignmentComponent } from './assignment/assignment.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { FormsModule } from '@angular/forms';
     MyworkComponent,
     ServerComponent,
     PickupComponent,
-    
+    AssignmentComponent
   ],
   imports: [
     BrowserModule,

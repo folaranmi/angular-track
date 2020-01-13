@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 
 export class ServerComponent {
 
+    displayContent: number = 6;
 }

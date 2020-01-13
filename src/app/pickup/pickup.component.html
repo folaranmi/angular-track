@@ -3,7 +3,8 @@
         <h1 class="text-center">{{name}}</h1>
         <button class="btn btn-primary" style="display: table; margin: 0 auto;" [disabled]="allowNewServer" (click)="onCreateServer()">Add Server</button>
 
-        <p class="text-center">{{ serverCreationstatus }}</p>
+        <!-- <p class="text-center">{{ serverCreationstatus }}</p> -->
+        <p class="text-center" *ngIf="serverCreated">A Server was created. Name is {{ serverName }}</p>
 
         <div class="col-md-4 offset-md-4">
             <!-- <label for="">Servername</label>

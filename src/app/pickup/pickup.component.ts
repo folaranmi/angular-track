@@ -11,7 +11,8 @@ export class PickupComponent {
     name = "Just a time to the great stuff";
     allowNewServer = true;
     serverCreationstatus = "No server created";
-    serverName = "";
+    serverName = "Testserver";
+    serverCreated = false;
 
     constructor() {
 
@@ -21,6 +22,7 @@ export class PickupComponent {
     }
 
     onCreateServer(){
+        this.serverCreated = true;
         this.serverCreationstatus = "A Server have been created";
     }
 

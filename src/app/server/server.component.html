@@ -16,12 +16,45 @@
             </p>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4" *ngIf="displayContent > 5; else showmore ">
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique ipsa dolorum sint assumenda. 
                 Quisquam iste perferendis numquam ullam possimus id dignissimos, facere distinctio 
                 voluptatum laudantium dolorum esse quis, assumenda nesciunt!
             </p>
         </div>
+
+        <ng-template #showmore>
+            <div class="col-md-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique ipsa dolorum sint assumenda. 
+                    Quisquam iste perferendis numquam ullam possimus id dignissimos, facere distinctio 
+                    voluptatum laudantium dolorum esse quis, assumenda nesciunt!
+                </p>
+            </div>
+    
+            <div class="col-md-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique ipsa dolorum sint assumenda. 
+                    Quisquam iste perferendis numquam ullam possimus id dignissimos, facere distinctio 
+                    voluptatum laudantium dolorum esse quis, assumenda nesciunt!
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique ipsa dolorum sint assumenda. 
+                    Quisquam iste perferendis numquam ullam possimus id dignissimos, facere distinctio 
+                    voluptatum laudantium dolorum esse quis, assumenda nesciunt!
+                </p>
+            </div>
+    
+            <div class="col-md-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique ipsa dolorum sint assumenda. 
+                    Quisquam iste perferendis numquam ullam possimus id dignissimos, facere distinctio 
+                    voluptatum laudantium dolorum esse quis, assumenda nesciunt!
+                </p>
+            </div>
+        </ng-template>
     </div>
 </div>
