@@ -13,12 +13,15 @@ export class PickupComponent {
     serverCreationstatus = "No server created";
     serverName = "Testserver";
     serverCreated = false;
+    serverStatus: string = 'offline';
 
     constructor() {
 
         setTimeout( () => {
             this.allowNewServer = false;
         },2000);
+
+        this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
     }
 
     onCreateServer(){
@@ -28,5 +31,12 @@ export class PickupComponent {
 
     onUpdateServerName(event: Event){
         this.serverName = (<HTMLInputElement>event.target).value;
+    }
+
+    getServerStatus(){
+        return this.serverStatus;
+    }
+    getColor(){
+        return this.serverStatus === 'online' ? 'green' : 'red';
     }
 }
