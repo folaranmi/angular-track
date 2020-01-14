@@ -14,6 +14,7 @@ export class PickupComponent {
     serverName = "Testserver";
     serverCreated = false;
     serverStatus: string = 'offline';
+    servers = ["Server 1", "Server 2", "Server 3"];
 
     constructor() {
 
@@ -27,6 +28,7 @@ export class PickupComponent {
     onCreateServer(){
         this.serverCreated = true;
         this.serverCreationstatus = "A Server have been created";
+        this.servers.push(this.serverName);
     }
 
     onUpdateServerName(event: Event){
