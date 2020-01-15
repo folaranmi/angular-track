@@ -15,7 +15,7 @@
 
             <p>{{ serverName }}</p>
             <p [ngStyle]="{color: getColor() }">server is {{ getServerStatus() }}</p>
-            <p ngClass="online: serverStatus === online">server is {{ getServerStatus() }} </p>
+            <p ngClass="online: serverStatus === online" *ngfor="">server is {{ getServerStatus() }} </p>
         </div>
     </div>
 
