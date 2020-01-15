@@ -4,7 +4,8 @@
         <button class="btn btn-primary" style="display: table; margin: 0 auto;" [disabled]="allowNewServer" (click)="onCreateServer()">Add Server</button>
 
         <!-- <p class="text-center">{{ serverCreationstatus }}</p> -->
-        <p class="text-center" *ngIf="serverCreated">A Server was created. Name is {{ serverName }}</p>
+        <p class="text-center" *ngIf="serverCreated" >A Server was created. Name is {{ serverName }}</p>
+        <p *ngFor="let server of Servers">A Server was created. Name is {{ server }}</p>
 
         <div class="col-md-4 offset-md-4">
             <!-- <label for="">Servername</label>
@@ -15,7 +16,7 @@
 
             <p>{{ serverName }}</p>
             <p [ngStyle]="{color: getColor() }">server is {{ getServerStatus() }}</p>
-            <p ngClass="online: serverStatus === online" *ngfor="">server is {{ getServerStatus() }} </p>
+            <p ngClass="online: serverStatus === online" >server is {{ getServerStatus() }} </p>
         </div>
     </div>
 
