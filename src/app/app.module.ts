@@ -10,6 +10,7 @@ import { ServerComponent } from './server/server.component';
 import { PickupComponent } from './pickup/pickup.component';
 import { FormsModule } from '@angular/forms';
 import { AssignmentComponent } from './assignment/assignment.component';
+import { NgxContentLoadingModule } from 'ngx-content-loading';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AssignmentComponent } from './assignment/assignment.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxContentLoadingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

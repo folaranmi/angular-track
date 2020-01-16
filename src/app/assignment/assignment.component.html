@@ -7,4 +7,24 @@
             <button [disabled]="username === '' " (click)="username = '' "  class="btn btn-primary">Click Me</button>
         </div>
     </div>
+
+    <div class="row">
+        <div>
+            <ngx-content-loading 
+            [speed]="'1500ms'"
+            [width]="1000"
+            [height]="300"
+            [primaryColor]="'#222'"
+            [secondaryColor]="'#5e5e5e'">
+            <svg:g ngx-circle cy="30" cx="30" r="30" ry="5"></svg:g>
+            <svg:g ngx-rect width="150" height="10" y="10" x="70" rx="5" ry="5"></svg:g>
+            <svg:g ngx-rect width="90" height="10" y="40" x="70" rx="5" ry="5"></svg:g>
+            <svg:g ngx-rect width="210" height="10" y="70" x="0" rx="5" ry="5"></svg:g>
+            <svg:g ngx-rect width="240" height="10" y="100" x="0" rx="5" ry="5"></svg:g>
+        </ngx-content-loading>
+        </div>
+    </div>
 </div>
+
+
+
