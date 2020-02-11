@@ -24,14 +24,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/air-datepicker/dist/css/datepicker.min.css"
 
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/popper.js/dist/umd/popper.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "./src/assets/js/videomodal.js"
+              "./src/assets/js/videomodal.js",
+              "./node_modules/air-datepicker/dist/js/datepicker.min.js",
+              "./node_modules/air-datepicker/dist/js/i18n/datepicker.en.js"
             ]
           },
           "configurations": {

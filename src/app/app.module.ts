@@ -26,7 +26,8 @@ import { NgxContentLoadingModule } from 'ngx-content-loading';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    NgxContentLoadingModule
+    NgxContentLoadingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

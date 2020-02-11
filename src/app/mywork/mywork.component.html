@@ -13,4 +13,13 @@
             <p>{{ work }}</p>
         </div>
     </div>
+
+    <form action="" class="mb-7 ml-4" #f="ngForm">
+        <div class="row">
+            <div class="col-md-4">
+                <input type="text"  ngModel name="mydate" class="form-control customDate" placeholder="Select DOB"  onkeydown="return false" #mydate="ngModel">
+                <p>{{ mydate.value }}</p>
+            </div>
+        </div>
+    </form>
 </div>
